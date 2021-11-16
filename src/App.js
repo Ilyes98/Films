@@ -15,7 +15,7 @@ const movies = [
   }, {
     id: '2',
     title: 'Midnight Sun',
-    url: "https://urlz.fr/gNBh",
+    url: "https://urlz.fr/gNXP",
     category: 'Comedy',
     likes: 2,
     dislikes: 0
@@ -29,7 +29,7 @@ const movies = [
   }, {
     id: '4',
     title: 'Sans un bruit',
-    url: "https://urlz.fr/gNBj",
+    url: "https://urlz.fr/gNY2",
     category: 'Thriller',
     likes: 6,
     dislikes: 6
@@ -43,21 +43,21 @@ const movies = [
   }, {
     id: '6',
     title: 'Pulp Fiction',
-    url: "https://urlz.fr/gNBk",
+    url: "https://urlz.fr/gNY9",
     category: 'Thriller',
     likes: 11,
     dislikes: 3
   }, {
     id: '7',
     title: 'Pulp Fiction',
-    url: "https://urlz.fr/gNBm",
+    url: "https://urlz.fr/gNY9",
     category: 'Thriller',
     likes: 12333,
     dislikes: 32
   }, {
     id: '8',
     title: 'Seven',
-    url: "https://urlz.fr/gNBn",
+    url: "https://urlz.fr/gNYL",
     category: 'Thriller',
     likes: 2,
     dislikes: 1
