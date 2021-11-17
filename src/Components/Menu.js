@@ -33,8 +33,6 @@ function Menu({ deleteItem, id, title, image, likes, dislikes, category }) {
                     </IconButton>
                 </div>
             </div>
-
-
         </div>
     )
 }

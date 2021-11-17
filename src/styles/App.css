@@ -1,13 +1,8 @@
-@media screen and (min-width: 800px) {
-	.nav-toggle-label {
-		display: none;
-	}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 
 body{
     font-family: 'Varela Round', sans-serif;
@@ -50,6 +45,7 @@ p{
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 3rem;
     padding-bottom: 6rem;
+    padding:1px;
 }
 
 .item-container{
@@ -61,7 +57,6 @@ p{
     display: flex;
     width: 100%;
     padding: 1.2rem 1.2rem;
-    background-color: #19202E;
     
 }
 
@@ -129,4 +124,11 @@ p{
     color: white;
     background-color: rgb(35, 167, 243);
 }
+
+
+@media all and (min-width: 800x)
+{
+    .nav-toggle-label {
+        display:none
+    }
 }

@@ -1,13 +1,14 @@
 import { useState } from 'react';
 import Menu from './Components/Menu';
 import Button from './Components/Button';
-import Grid from '@material-ui/core/Grid';
 import ReactPaginate from 'react-paginate';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Container from 'react-bootstrap/Container'
 
 const movies = [
   {
     id: '1',
-    url: "https://urlz.fr/gNBi",
+    url: "https://urlz.fr/gObB",
     title: 'Oceans 8',
     category: 'Comedy',
     likes: 4,
@@ -22,7 +23,7 @@ const movies = [
   }, {
     id: '3',
     title: 'Les indestructibles 2',
-    url: "https://urlz.fr/gNBg",
+    url: "https://urlz.fr/gObI",
     category: 'Animation',
     likes: 3,
     dislikes: 1
@@ -71,16 +72,16 @@ const movies = [
   }, {
     id: '10',
     title: 'Gone Girl',
-    url: "https://urlz.fr/gNBo",
+    url: "https://urlz.fr/gObK",
     category: 'Thriller',
     likes: 22,
     dislikes: 12
   },
 ]
 
+
 export const movies$ = new Promise((resolve, reject) => setTimeout(resolve, 100, movies))
 const allCategories = ['All', ...new Set(movies.map(item => item.category))];
-
 
 function App() {
   const [menuItem, setMenuItem] = useState([]);
@@ -119,20 +120,29 @@ function App() {
         </h1>
       </div>
 
-      <Button button={buttons} filter={filter} />
+      <Container>
+        <Button button={buttons} filter={filter} />
+      </Container>
 
       {menuItem && menuItem.slice(pagedVisited, pagedVisited + itemPerPage).map((c) => (
-        <Grid key={c.id} item>
-          <Menu
-            id={c.id}
-            title={c.title}
-            category={c.category}
-            image={c.url}
-            likes={c.likes}
-            dislikes={c.dislikes}
-            deleteItem={deleteTask}
-          />
-        </Grid>
+        <div className="item">
+          <div className="item-con">
+            <div className="item-container">
+              <Menu
+                id={c.id}
+                title={c.title}
+                category={c.category}
+                image={c.url}
+                likes={c.likes}
+                dislikes={c.dislikes}
+                deleteItem={deleteTask}
+              />
+            </div>
+
+          </div>
+
+
+        </div>
       ))}
       <ReactPaginate
         breakLabel="..."
